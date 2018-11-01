@@ -3,6 +3,8 @@
 html
     font-size: 14px
     font-family: 'Josefin Slab', serif
+    *
+        box-sizing: border-box
 body
     margin: (0!important)
 a
@@ -33,16 +35,27 @@ section, footer
 .lightbox 
     display: none
     width: 95%
-    max-width: 750px
+    padding: 40px 20px
+    max-width: 950px
     min-width: 310px
     height: auto
-    max-height: 600px
+    max-height: 700px
     position: fixed
     left: 50%
     top:50%
     transform: translate(-50%, -50% ) 
     z-index: 99   
     background-color: #ffffff
+    img.potion-img 
+        max-width: 100%
+        width: 65%
+        height: auto
+        display: inline-block
+        vertical-align: middle
+    .info-container
+        display: inline-block
+        width: 34%
+        vertical-align: middle
 .header
     padding: 20px 0
     > div

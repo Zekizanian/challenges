@@ -1,13 +1,17 @@
 var products;
+var ingredientLi;
 
-
-function setLightbox(el) {
-    console.log($(el))
-    $('.lightbox .potion-title').html($(el).find('.title').text().replace(' - ',''))
-    console.log(el.attr('data-id'))
-    $('.lightbox .effect').html(products.potions[el.attr('data-id')].effect)
-    var ingredientsArray = []
-    for (var i = 0; i < products.potions[el.attr('data-id')].ingredients.length)
+function setLightbox(dataId,src , ingredientLi) {
+    var potion = products.potions[dataId];
+    $('.lightbox img.potion-img').attr('src', src)
+    $('.lightbox .potion-title').html(potion.name);
+    $('.lightbox .effect').html(potion.effect);
+    for (var i = 0; i < potion.ingredients.length; i++) {
+        $('.lightbox .ingredients ul .ingredient.clean').html('<span>' + potion.ingredients[i] + "</span>").removeClass('clean')
+        if(i < potion.ingredients.length -1) {
+            $('.lightbox .ingredients ul').append(ingredientLi)
+        }
+    }
 
     $('.lightbox, #modal ').css('display', 'block')
     
@@ -46,10 +50,11 @@ $(document).ready(function(){
     $('.lightbox .close, #modal ').click(function(){
         $('.lightbox, #modal ').css('display', 'none')
     })
+    ingredientLi = $('.lightbox .ingredients ul').html()
 })
 $(document).on('click','.spot',function (){
-    var $spot = $(this)
-    setLightbox($(this));
+    $('.lightbox .ingredients ul').html(ingredientLi)
+    setLightbox($(this).attr('data-id'), $(this).find('img').attr('src'),ingredientLi);
 })
 
     
