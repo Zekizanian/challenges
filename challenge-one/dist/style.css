@@ -1,3 +1,22 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  margin-bottom: 0 !important;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 section, footer {
   width: 100%;
 }
@@ -7,17 +26,93 @@ section, footer {
   margin: 0 auto;
 }
 
-.header {
+.flexbox {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .header > div {
   display: inline-block;
 }
 
 .menu-container {
   background: #523468;
+}
+.menu-container .menu {
+  display: inline-block;
+  width: 74%;
+}
+.menu-container .menu li {
+  display: inline-block;
+}
+.menu-container .forms-links {
+  display: inline-block;
+  width: 25%;
+  text-align: right;
+}
+
+.shelf-container .shelf-title {
+  text-transform: capitalize;
+}
+.shelf-container #recebe-potions .spot {
+  display: inline-block;
+}
+.shelf-container #recebe-potions .spot span, .shelf-container #recebe-potions .spot strong {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+.shelf-container #recebe-potions .spot .title {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.shelf-container #recebe-potions .spot .price {
+  color: #e13a1e;
+}
+
+footer {
+  padding: 30px;
+  background: #e6e6e6;
+}
+footer .links-footer, footer .newsletter {
+  display: inline-block;
+  width: 40%;
+}
+footer .institutional-links {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+footer .institutional-links a {
+  display: inline-block;
+  color: #e13a1e;
+  width: 30%;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+footer .social-media {
+  width: 76%;
+  min-width: 300px;
+  margin-bottom: 60px;
+}
+footer .social-media a {
+  display: inline-block;
+}
+footer .newsletter {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+}
+footer .newsletter > * {
+  display: block;
+  width: 100%;
+}
+footer .disclaimer {
+  display: block;
+  width: 100%;
+}
+footer .disclaimer .news-title {
+  font-style: italic;
 }
 
 /*# sourceMappingURL=style.css.map */
