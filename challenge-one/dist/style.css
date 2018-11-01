@@ -1,0 +1,23 @@
+section, footer {
+  width: 100%;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header > div {
+  display: inline-block;
+}
+
+.menu-container {
+  background: #523468;
+}
+
+/*# sourceMappingURL=style.css.map */

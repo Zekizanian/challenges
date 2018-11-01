@@ -10,7 +10,11 @@
     "grunt-contrib-uglify": "^4.0.0 ",
     "npm": "^6.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-express-server": "^0.5.4"
+  },
   "scripts": {
     "test": "test dev"
   },

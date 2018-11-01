@@ -11,7 +11,9 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'public/stylesheets/style.css' : 'public/stylesheets/style.sass'
+                    'dist/style.css' : 'src/sass/style.sass',
+                    'dist/style_tablet.css' : 'src/sass/style_tablet.sass',
+                    'dist/style_desktop.css' : 'src/sass/style_desktop.sass'
                 }
             }
         },
@@ -24,6 +26,6 @@ module.exports = function(grunt) {
     });
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-express-server');
-    grunt.registerTask('dev',['express','sass','watch']);
+    // grunt.loadNpmTasks('grunt-express-server');
+    grunt.registerTask('dev',['sass','watch']);
 }
