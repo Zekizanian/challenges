@@ -1,0 +1,34 @@
+{
+  "name": "challenge-one",
+  "version": "1.0.0",
+  "description": "Com este pequeno desafio vamos avaliar o seu conhecimento técnico para entender melhor como você trabalha com o seu código, então mostre o seu melhor.",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-jshint": "^2.0.0",
+    "grunt-contrib-nodeunit": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.0 ",
+    "npm": "^6.4.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-express-server": "^0.5.4"
+  },
+  "scripts": {
+    "test": "test dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zekizanian/padrao.git"
+  },
+  "keywords": [
+    "challenge-one-andre-ventura"
+  ],
+  "author": "andre ventura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zekizanian/padrao/issues"
+  },
+  "homepage": "https://github.com/Zekizanian/padrao#readme"
+}
