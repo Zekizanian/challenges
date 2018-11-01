@@ -7,6 +7,28 @@
         <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,400i,600,600i,700,700i|Roboto+Condensed" rel="stylesheet">
     </head>
     <body>
+        <div id="modal"></div>
+        <section class="lightbox">
+            <h2 class="potion-title">
+
+            </h2>
+            <div>
+                <b>Use/Effect</b>
+                <span class="effect"></span>
+            </div>
+            <div class="ingredients">
+                <h2>
+                    Ingredients:
+                </h2>
+                <ul>
+                    <li class="ingredient"></li>
+                </ul>
+            </div>
+            <div class="price">
+                <b>Price</b>
+                <span></span>
+            </div>
+        </section>
         <section class="header-container">
             <div class="container">
                 <div class="header flexbox">
@@ -15,7 +37,7 @@
                         <img src="../src/assets/images/header/logo.png" alt="MERLIN'S POTION">
                     </div>
                     <div class="header-search">
-                        <input type="text">
+                        <input type="text" placeholder="Search our stock">
                     </div>
                     <div class="shipping">
                         <span>Free Shipping</span>
@@ -25,7 +47,7 @@
                         <img src="../src/assets/images/header/bag.png" alt="your bag" title="your bag">
                         <span>
                             BAG:
-                            <b> 0</b>
+                            <b> 1</b>
                         </span>
                     </div>
                     <div class="shipping-mobile mobile">
@@ -91,8 +113,11 @@
                 <div id="recebe-potions" class="flexbox">
                     <div class="spot clean" data-id=''>
                         <img src="../src/assets/images/products/" alt="">
-                        <strong class="title"><span class="price"></span>
-                        </strong>
+                        <div>
+                            <strong class="title">
+                            </strong>
+                            <span class="price"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,10 +127,10 @@
                 <div class="links-footer">
                     <div class="institutional-links">
                         <a href="/institutional/company">company</a>
-                        <a href="/institutional/returns">returns</a>
                         <a href="/institutional/contact-us">contact us</a>
-                        <a href="/institutional/carrers">carrers</a>
                         <a href="/institutional/shipping">shipping</a>
+                        <a href="/institutional/returns">returns</a>
+                        <a href="/institutional/carrers">carrers</a>
                     </div>
                     <div class="social-media flexbox">
                         <a href="" class="facebook">
