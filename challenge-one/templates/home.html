@@ -1,6 +1,7 @@
 <!DOCYTPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../dist/style.css">
         <link rel="stylesheet" href="../dist/style_tablet.css">
         <link rel="stylesheet" href="../dist/style_desktop.css">
@@ -9,15 +10,18 @@
     <body>
         <div id="modal"></div>
         <section class="lightbox">
+            <div class="close">
+
+            </div>
             <img src="" alt="" class="potion-img">
             <div class="info-container">
                 
                 <h2 class="potion-title">
                     
                 </h2>
-                <div>
-                    <b>Use/Effect</b>
-                    <span class="effect"></span>
+                <div class="effect">
+                    <b>Use/Effect:</b>
+                    <span ></span>
                 </div>
                 <div class="ingredients">
                     <h2>
@@ -28,8 +32,11 @@
                     </ul>
                 </div>
                 <div class="price">
-                    <b>Price</b>
+                    <b>Price:</b>
                     <span></span>
+                </div>
+                <div class="add-to-cart">
+                    <button type="button">ADD TO CART</button>
                 </div>
             </div>
         </section>

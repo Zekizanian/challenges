@@ -14,6 +14,17 @@ img
     max-width: 100%
     height: auto
     display: block
+button
+    border: 0
+    color: #fff
+    background-color: #e13a1e
+    padding: 10px
+    border-radius: 5px
+    font-size: 1rem
+    cursor: pointer
+
+
+
 section, footer 
     width: 100%
 .container 
@@ -29,7 +40,7 @@ section, footer
     height: 100%
     width: 100%
     background-color: #000
-    opacity: 0.6
+    opacity: 0.8
     z-index: 98
 
 .lightbox 
@@ -46,16 +57,41 @@ section, footer
     transform: translate(-50%, -50% ) 
     z-index: 99   
     background-color: #ffffff
+    font-family: "Times new Roman", serif
+    .close
+        float: right
+        cursor: pointer
+        &:before
+            font-family: arial
+            content: 'X'
+            padding: 3px
     img.potion-img 
+        float: left
         max-width: 100%
         width: 65%
         height: auto
         display: inline-block
         vertical-align: middle
     .info-container
+        float: left
         display: inline-block
         width: 34%
         vertical-align: middle
+        .effect
+            b
+                display: block
+                margin-bottom: 20px
+        .ingredients
+            ul
+                padding: 0
+                list-style-type: none
+        .price
+            font-size: 1.3rem
+            span 
+                display: block
+                color: #e13a1e
+                font-weight: bold
+                margin-bottom: 20px
 .header
     padding: 20px 0
     > div
@@ -140,6 +176,8 @@ section, footer
         .spot
             display: inline-block
             font-family: 'Times New Roman', Times, serif
+            width: 49%
+            margin-bottom: 30px
             span,strong
                 display: inline-block
                 font-size: 1.2rem
@@ -190,17 +228,13 @@ footer
             margin-bottom: 20px
         .news-offer
             margin-bottom: 15px
-        input, button
-            border-radius: 5px
-            padding: 10px
-            font-size: 1rem
         input
+            border-radius: 5px
+            font-size: 1rem
+            padding: 10px
             border: 1px solid #000
             width: 70%
-        button
-            border: 0
-            color: #fff
-            background-color: #e13a1e
+        
 
     .disclaimer 
         display: block

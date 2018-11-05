@@ -5,7 +5,8 @@ function setLightbox(dataId,src , ingredientLi) {
     var potion = products.potions[dataId];
     $('.lightbox img.potion-img').attr('src', src)
     $('.lightbox .potion-title').html(potion.name);
-    $('.lightbox .effect').html(potion.effect);
+    $('.lightbox .effect span').html(potion.effect);
+    $('.lightbox .price span').html('$' + potion.price);
     for (var i = 0; i < potion.ingredients.length; i++) {
         $('.lightbox .ingredients ul .ingredient.clean').html('<span>' + potion.ingredients[i] + "</span>").removeClass('clean')
         if(i < potion.ingredients.length -1) {
