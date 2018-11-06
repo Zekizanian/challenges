@@ -50,12 +50,12 @@ $(document).ready(function(){
     })
     ingredientLi = $('.lightbox .ingredients ul').html();
 
-    $('.menu-container .menu').prepend($('.header-search').clone())
+    $('.fecha-menu-mobile').after($('.header-search').clone())
     //abre menu mobile
     $('.mobile-menu-icon').on('click', function(){
         if(window.innerWidth < 768) {
-            if ( $('.menu-container .menu .header-search').length==0) {
-                $('.menu-container .menu').prepend($('.header-search').clone())
+            if ( $('.menu-container .header-search').length==0) {
+                $('.fecha-menu-mobile').after($('.header-search').clone())
             }
             $('.menu-container').addClass('mobile-menu')
             $('.menu-container.mobile-menu').animate({width:'315px'},500);
