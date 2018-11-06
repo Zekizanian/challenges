@@ -30,6 +30,7 @@ section, footer
 .container 
     display: block
     margin: 0 auto
+    max-width: 95%
 .flexbox
     display: flex
     flex-wrap: wrap
@@ -134,6 +135,9 @@ section, footer
     background:#523468
     font-weight: 600
     font-style: italic
+    &:not(.mobile-menu)
+        .header-search
+            display: none!important
     .menu
         display: inline-block
         width: 74%
@@ -242,5 +246,54 @@ footer
         font-family: 'Roboto Condensed', sans-serif
         
 @media (max-width: 767px)
-    .header-search
+    .header .header-search,.header .shipping,.menu-container,
+    footer .links-footer .institutional-links
         display: none
+    .shipping-mobile
+        text-align: center
+        font-style: italic
+        font-weight: 800
+        color: rgba(0,0,0,0.6)
+        display: block
+        font-size: 1.5rem
+        padding: 10px 0
+        background-color: #ececec
+
+    .mobile-menu-icon
+        padding-top: 7px
+        >div 
+            width: 35px
+            height: 5px
+            border-radius: 3px
+            background-color: #523468
+            margin: 3px 0
+    .mobile-menu
+        display: block
+        overflow: hidden
+        width: 0
+        max-width: 315px  
+        position: fixed
+        top: 0
+        left: 0
+        z-index: 99
+        height: 100%
+        background-color: #fff
+        .container
+            width: 100%
+            max-width: none
+        .menu
+            width: 100%
+            ul
+                background: #523468
+                width: 100%
+                li
+                    display: block
+                    width: 100%
+                    &:after
+                        content: none
+
+
+    .links-footer
+        order: 2
+    .newsletter
+        order: 1
