@@ -271,9 +271,11 @@ footer
                     ul
                         li
                             display: inline-block
+                            vertical-align: top
                             width: 49%
                 &:last-child
                     width: 27%
+                    padding-top: 20px
 
 
     .header .header-search,.header .shipping,.menu-container,
@@ -355,7 +357,8 @@ footer
             text-align: center
             font-size: 1.1rem
             padding: 25px 0 20px
-
+    .shelf-title
+        text-align: center
 
     .links-footer
         order: 2
@@ -369,7 +372,16 @@ footer
         order: 3
         width: 100%
         text-align: center
-@media (max-width: 419px)
+@media (max-width: 544px)
     .lightbox
         .info-container > div
-            width: 100%
+            width: 100%!important
+            &:last-child
+                padding-top:0
+                > div
+                    display: inline-block
+                    vertical-align: middle
+                    width: 49%
+                    height: 47px
+    .shipping-mobile
+        font-size: 1.1rem

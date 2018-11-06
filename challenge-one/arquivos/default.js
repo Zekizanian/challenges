@@ -64,7 +64,9 @@ $(document).ready(function(){
             $('.menu-container .menu').removeClass('mobile-menu')
         }
     });
-    $('fecha-menu-mobile')
+    $('fecha-menu-mobile').on('click', function(){
+        $('.menu-container.mobile-menu').animate({width:'0px'},500);
+    })
 })
 $(document).on('click','.spot',function (){
     $('.lightbox .ingredients ul').html(ingredientLi);
